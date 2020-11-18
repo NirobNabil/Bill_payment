@@ -9,7 +9,7 @@ var config = require('./config');
 
 //mongoose
 mongoose.connect(
-  'mongodb+srv://aliceparent:aliceisabadkid@cluster0.19fjt.mongodb.net/webdev_task',
+  'mongodb+srv://aliceparent:aliceisabadkid@cluster0.mrvha.mongodb.net/Bill_payment?retryWrites=true&w=majority',
   {useNewUrlParser: true, useUnifiedTopology : true}).then(() => {
     console.log('connected,,')
   }).catch((err)=> console.log(err));
