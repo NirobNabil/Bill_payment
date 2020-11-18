@@ -55,7 +55,7 @@ currencyRates = {'dollar': 59, 'euro': 76, 'taka': 1}
 const generateCurrencyRates = () => {
   currencyRates.dollar = Math.round(56+Math.random()*10);
   currencyRates.euro = Math.round(70+Math.random()*10);
-  console.log(currencyRates)
+  // console.log(currencyRates)
   setTimeout(generateCurrencyRates, 3000+Math.round(Math.random()*5));
 }
 generateCurrencyRates();
