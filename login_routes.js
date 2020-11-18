@@ -32,8 +32,5 @@ router.post(
     )(req, res, next);
   }
 );
-router.get('/',(req,res)=>{
-  res.sendFile(path.join(__dirname+'/login.html'))
-})
 
 module.exports = router;

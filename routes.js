@@ -4,10 +4,6 @@ const path = require('path')
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
 
-router.get('/dashboard', (req,res)=>{
-  res.sendFile(path.join(__dirname+'/dashboard.html'))
-})
-
 router.get('/events', eventsHandler);
 router.get('/status', (req, res) => res.json({clients: clients.length}));
 router.post('/pay', (req,res) => {console.log(req.body); setTimeout(()=>{
